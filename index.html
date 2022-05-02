@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <script src='https://ajax.googleapis.com/ajax/libs/jquey/3.6.0/jquery.min.js'></script> -->
+    <script src='./jquery-3.6.0.min.js'></script>
+    <script type="text/javascript" src="./script.js"></script>
+    <title>آنلاین خوان</title>
+</head>
+
+<body>
+    <div class="popUp-page" id="popUp-page">
+        <img src="./assets/images/close.svg" width="20" height="20" class="popUp-img">
+        <span class="popUp-span">:نام</span>
+        <input type="text" class="popUp-input" />
+        <span class="popUp-span">:پست الکترونیک</span>
+        <input type="text" class="popUp-input" />
+        <span class="popUp-span">:پیام</span>
+        <textarea type="text" class="popUp-input"></textarea>
+        <div class="popUp-btn-div">
+            <button class="popUp-btn">ارسال</button>
+        </div>
+    </div>
+    <div class="left-menue">
+        <div class="left-menue-open" id="div1">
+            <img src="./assets/images/guid-black.svg" width="25" height="25" class="collaps">
+            <img src="./assets/images/pay-black.svg" width="25" height="25" class="collaps">
+            <img src="./assets/images/dars-black.svg" width="25" height="25" class="collaps">
+            <img src="./assets/images/test-black.svg" width="25" height="25" class="collaps">
+        </div>
+        <div class="left-menue-img" id="div2">
+            <img src="./assets/images/3dots.svg" width="35" height="35" />
+        </div>
+    </div>
+    <main class="root">
+        <container class="container">
+            <!--  header  -->
+            <section class="header border-buttom flex-space" id="header">
+                <section class="header-left flex-row">
+                    <div>
+                        تماس با ما
+                    </div>
+                    <div>
+                        درباره ما
+                    </div>
+                    <div>
+                        مشاور آموزشی
+                    </div>
+                    <div>
+                        خرید پکیج درس
+                    </div>
+                </section>
+                <section class="header-left-mobile">
+                    <img src="./assets/images/hamburger-gary.png" width="25" height="25" class="header-left-mobile-img">
+                    <img src="./assets/images/close-blue.png" width="25" height="25" class="header-left-mobile-img-close">
+                    <div class="header-left-mobile-details flex-column">
+                        <div>
+                            تماس با ما
+                        </div>
+                        <div>
+                            درباره ما
+                        </div>
+                        <div>
+                            مشاور آموزشی
+                        </div>
+                        <div>
+                            خرید پکیج درس
+                        </div>
+                    </div>
+                </section>
+                <section class=" header-right flex-row">
+                    <div class="flex-row">
+                        <span class="guid-span">
+                            راهنما
+                        </span>
+                        <img src="./assets/images/guid.png" width="15" height="15" class="guid-img" id="guid-img">
+                    </div>
+
+                    <div class="flex-row">
+                        <span>
+                            ساخت آزمون
+                        </span>
+                        <img src="./assets/images/test-gray.png" width="15" height="15" class="img">
+                    </div>
+                </section>
+            </section>
+            <!-- end of header  -->
+            <!-- main -->
+            <main class="main-content">
+                <!-- topbar -->
+                <section class="top-bar flex-space">
+                    <section class="profile-box flex-row">
+                        <img src="./assets/images/down.png" width="10" height="10" class="sort-img">
+                        <span>
+                            سلام, رزیتا گل تراش
+                        </span>
+                        <img src="./assets/images/profile-round.png" width="30" height="30" class="img">
+                        <div class="profile-box-open flex-column">
+                            <div>پروفایل کاربر</div>
+                            <div>خروج</div>
+                        </div>
+                    </section>
+                    <section class="profile-lesson-box-mobile">
+                        <img src="./assets/images/profile.png" width="35" height="35" class="profile-box-mobile-img" />
+                        <img src="./assets/images/search-round.png" width="35" height="35"
+                            class="lessons-box-mobile-img" />
+                    </section>
+                    <img src="./assets/images/close.svg" width="20" height="20" class="exit-profile" />
+                    <section class="profile-box-mobile flex-row">
+                        <img src="./assets/images/down.png" width="10" height="10" class="sort-img">
+                        <span>
+                            سلام, رزیتا گل تراش
+                        </span>
+                        <img src="./assets/images/profile-round.png" width="30" height="30" class="img">
+                        <div class="profile-box-open flex-column">
+                            <div>پروفایل کاربر</div>
+                            <div>خروج</div>
+                        </div>
+                    </section>
+                    <img src="./assets/images/close.svg" width="20" height="20" class="exit-lesson" />
+                    <div class="lessons-box-mobile">
+                        <div class="search flex-row">
+                            <button id="search-button">
+                                <img src="./assets/images/search.png" width="15" height="15" class="img">
+                            </button>
+                            <input type="text" placeholder='... جستجوی درس' />
+                        </div>
+                        <div class="lesson-m">
+                            <div class="lesson-mobile flex-space">
+                                <img src="./assets/images/down-black.svg" width="5px" height="5px" />
+                                <span>
+                                    هنر
+                                </span>
+                            </div>
+                            <container class="title-tooltip-tooltip-m">
+                                <div class="inner-lesson">نقاشی1</div>
+                                <div class="inner-lesson">خوشنویسی</div>
+                                <div class="inner-lesson">سفالگری</div>
+                            </container>
+                        </div>
+                        <div class="lesson-m">
+                            <div class="lesson-mobile flex-space">
+                                <img src="./assets/images/down-black.svg" width="5px" height="5px" />
+                                <span>
+                                    فارسی
+                                </span>
+                            </div>
+                            <container class="title-tooltip-tooltip-m">
+                                <div class="inner-lesson">نقاشی2</div>
+                                <div class="inner-lesson">خوشنویسی</div>
+                                <div class="inner-lesson">سفالگری</div>
+                            </container>
+                        </div>
+                        <div class="lesson-m">
+                            <div class="lesson-mobile flex-space">
+                                <img src="./assets/images/down-black.svg" width="5px" height="5px" />
+                                <span>
+                                    فیزیک
+                                </span>
+                            </div>
+                            <container class="title-tooltip-tooltip-m">
+                                <div class="inner-lesson">نقاشی3</div>
+                                <div class="inner-lesson">خوشنویسی</div>
+                                <div class="inner-lesson">سفالگری</div>
+                            </container>
+                        </div>
+                        <div class="lesson-m">
+                            <div class="lesson-mobile flex-space">
+                                <img src="./assets/images/down-black.svg" width="5px" height="5px" />
+                                <span>
+                                    ریاضیات
+                                </span>
+                            </div>
+                            <container class="title-tooltip-tooltip-m">
+                                <div class="inner-lesson">نقاشی4</div>
+                                <div class="inner-lesson">خوشنویسی</div>
+                                <div class="inner-lesson">سفالگری</div>
+                            </container>
+                        </div>
+                    </div>
+                    <div class="top-bar-right flex-row">
+                        <div class="lessons-box flex-row">
+                            <div class="search flex-row">
+                                <button>
+                                    <img src="./assets/images/search.png" width="15" height="15" class="img">
+                                </button>
+                                <input type="text" placeholder='... جستجوی درس' />
+                            </div>
+                            <div class="title flex-row">
+                                <div class="title-dars flex-row">
+                                    <span>
+                                        دروس
+                                    </span>
+                                    <img src="./assets/images/doroos.svg" width="20" height="20" class="img">
+                                </div>
+                                <div class="title-tooltip">
+                                    <div class="lesson">هنر
+                                        <container class="title-tooltip-tooltip">
+                                            <div>نقاشی</div>
+                                            <div>خوشنویسی</div>
+                                            <div>سفالگری</div>
+                                        </container>
+                                    </div>
+                                    <div class="lesson">فارسی
+                                        <container class="title-tooltip-tooltip">
+                                            <div>نقاشی1</div>
+                                            <div>خوشنویسی</div>
+                                            <div>سفالگری</div>
+                                        </container>
+                                    </div>
+                                    <div class="lesson">فیزیک
+                                        <container class="title-tooltip-tooltip">
+                                            <div>نقاشی2</div>
+                                            <div>خوشنویسی</div>
+                                            <div>سفالگری</div>
+                                        </container>
+                                    </div>
+                                    <div class="lesson">ریاضیات
+                                        <container class="title-tooltip-tooltip">
+                                            <div>نقاشی3</div>
+                                            <div>خوشنویسی</div>
+                                            <div>سفالگری</div>
+                                        </container>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="top-bar-logo flex-row">
+                            <span>
+                                آنلاین خوان
+                            </span>
+                            <img src="./assets/images/pattern.svg" width="30" height="30" class="img">
+                        </div>
+                </section>
+                <!-- end of topbar -->
+                <container class="main">
+                    <container class="main-left">
+                        <section class="status-bar flex-space">
+                            <div class="status-bar-charge">
+                                <div>
+                                    <span class="charge-amount">هزار تومان </span>
+                                    <span class="charge-text"> مبلغ کیف پول شما</span>
+                                </div>
+                                <img src="./assets/images/coin.svg" width="20" height="20" />
+                            </div>
+                            <div class="status-bar-profile">
+                                پروفایل من
+                            </div>
+                        </section>
+                        <div class="flex-row">
+                            <span class=" status-hr hr1"></span>
+                            <span class="status-hr hr2"></span>
+                        </div>
+                        <section class="information">
+                            <div class="information-profile">
+                                <div class="card-block">
+                                    <span> :نام کاربری</span>
+                                    <span class="sp2"> rogn</span>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-block">
+                                    <div class="card-input">
+                                        <span class="sp1"> :پست الکترونیک </span>
+                                        <input type="text" class="input-card" />
+                                    </div>
+                                </div>
+                                <div class="card-block">
+                                    <div class="card-input">
+                                        <span class="sp1"> :شماره همراه</span>
+                                        <input type="text" class="input-card" />
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-title">تغییر رمز عبور
+                            </p>
+                            <div class="card">
+
+                                <div class="card-block">
+                                    <div class="card-input">
+                                        <span class="sp1"> :تکرار رمز عبور
+                                        </span>
+                                        <input type="password" class="input-card" />
+                                    </div>
+                                </div>
+                                <div class="card-block">
+                                    <div class="card-input">
+                                        <span class="sp1"> :رمز عبور</span>
+                                        <input type="password" class="input-card" />
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="card-title">:ویرایش اطلاعات کاربری
+                            </p>
+                            <div class="card">
+                                <div class="card-block">
+                                    <div class="card-input">
+                                        <span class="sp1"> :نام خانوادگی
+                                        </span>
+                                        <input type="text" class="input-card" />
+                                    </div>
+                                </div>
+                                <div class="card-block">
+                                    <div class="card-input">
+                                        <span class="sp1"> :نام</span>
+                                        <input type="text" class="input-card" />
+                                    </div>
+
+                                </div>
+                                <div class="card-block">
+                                    <div class="card-input flex-row">
+                                        <span class="sp1"> :جنسیت
+                                        </span>
+                                        <input type="radio" name="gender" id="male" />
+                                        <label style="padding: 10px; font-size: 10px;">پسر</label>
+                                        <input type="radio" name="gender" id="female" />
+                                        <label style="padding: 10px; font-size: 10px;">دختر</label>
+                                    </div>
+                                    <hr class="radio-hr">
+
+                                </div>
+                                <div class="card-block">
+                                    <div class="card-input">
+                                        <span class="sp1"> :کد ملی
+                                        </span>
+                                        <input type="text" class="input-card" />
+                                    </div>
+                                </div>
+                                <div class="card-block">
+                                    <div class="card-input">
+                                        <span class="sp1"> :نام مدرسه
+                                        </span>
+                                        <input type="text" class="input-card" />
+                                    </div>
+                                </div>
+                                <div class="card-block">
+                                    <div class="card-input">
+                                        <span class="sp1"> :تلفن ثابت
+                                        </span>
+                                        <input type="text" class="input-card" />
+                                    </div>
+                                </div>
+                                <div class="card-block">
+                                    <div class="card-input">
+                                        <span class="sp1"> :گروه تحصیلی
+                                        </span>
+                                        <input type="text" class="input-card" />
+                                    </div>
+                                </div>
+                                <div class="card-block">
+                                    <div class="card-input">
+                                        <span class="sp1"> :پایه تحصیلی
+                                        </span>
+                                        <input type="text" class="input-card" />
+                                    </div>
+                                </div>
+                                <span></span>
+                                <div class="card-block">
+                                    <div class="card-input">
+                                        <span class="sp1"> :کد معرف
+                                        </span>
+                                        <input type="text" class="input-card" />
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="flex-space">
+                            <button class="form-btn btn1">ذخیره تغییرات</button>
+                            <button class="form-btn btn2"> ابطال</button>
+
+                        </div>
+                    </container>
+                    <container class="main-right flex-column">
+                        <div class="profile-img">
+                            <img src="./assets/images/profile-gray.png" width="150" height="150" />
+                            <div class="profile-img-edit flex-row">
+                                <img src="./assets/images/camers.png" width="20" height="20" style="padding: 10x;" />
+                                تغییر تصویر
+                            </div>
+                        </div>
+                        <span class="profile-name">
+                            رزیتا گل تراش
+                        </span>
+                        <span class="profile-status">
+                            دانش آموز
+                        </span>
+                        <div class="question-box">
+                            <p class="question-title">
+                                ... سوالی داشتم
+                            </p>
+                            <p class="question-text">من اینجا هستم تا تو را راهنمایی کنم
+                                بنابراین اگر سوالی داری
+                                برای من ارسال کن
+                            </p>
+                            <button class="question-button" id="question-button">
+                                ارسال
+                            </button>
+
+                        </div>
+                    </container>
+                </container>
+            </main>
+            <!-- end of main -->
+        </container>
+
+        <container class="side-bar flex-space-col" id="side-bar">
+            <div class="side-bar-scroolable">
+                <div class=" side-bar-item flex-row border-buttom" id="f-img">
+                    <img src="./assets/images/hamburger.png" width="20" height="20" class="first-img" />
+                    <div class="detail" id="detail">
+                        <span class="side-bar-title">پنل دانش آموزی</span>
+                    </div>
+                </div>
+
+                <div class=" side-bar-item flex-row">
+                    <div class="detail" id="detail">
+                        <span class="side-bar-name">رزیتا گل تراش</span>
+                        <span class="side-bar-status"> دانش آموز</span>
+                    </div>
+                    <img src="./assets/images/profile.png" width="20" height="20" />
+                    <div class="side-bar-tooltip">پروفایل</div>
+                </div>
+                <div class=" side-bar-item flex-row">
+                    <span class="detail">درس</span>
+                    <img src="./assets/images/dars.png" width="20" height="20" />
+                    <div class="side-bar-tooltip">درس</div>
+                </div>
+                <div class=" side-bar-item flex-row">
+                    <span class="detail"> بسته دروس</span>
+                    <img src="./assets/images/package.png" width="20" height="20" />
+                    <div class="side-bar-tooltip">بسته دروس</div>
+                </div>
+                <div class=" side-bar-item flex-row">
+                    <span class="detail">آزمون</span>
+                    <img src="./assets/images/test.png" width="20" height="20" />
+                    <div class="side-bar-tooltip">آزمون</div>
+                </div>
+                <div class=" side-bar-item flex-row">
+                    <span class="detail">دبیران</span>
+                    <img src="./assets/images/teacher.png" width="20" height="20" />
+                    <div class="side-bar-tooltip">دبیران</div>
+                </div>
+                <div class=" side-bar-item flex-row">
+                    <span class="detail"> برنامه هفتگی </span>
+                    <img src="./assets/images/calendar.png" width="20" height="20" />
+                    <div class="side-bar-tooltip">برنامه هفتگی</div>
+                </div>
+                <div class=" side-bar-item flex-row">
+                    <span class="detail"> پرداخت ها</span>
+                    <img src="./assets/images/pay.png" width="20" height="20" />
+                    <div class="side-bar-tooltip">پرداخت ها</div>
+                </div>
+                <div class=" side-bar-item flex-row">
+                    <span class="detail">کیف پول</span>
+                    <img src="./assets/images/wallet.png" width="20" height="20" />
+                    <div class="side-bar-tooltip">کیف پول</div>
+                </div>
+                <div class=" side-bar-item flex-row">
+                    <span class="detail">مشاور</span>
+                    <img src="./assets/images/consultant.png" width="20" height="20" />
+                    <div class="side-bar-tooltip">مشاور</div>
+                </div>
+            </div>
+            <div>
+                <button class="scrool-btn" id="scrool-btn">
+                    <img src="./assets/images/down-blue.png" width="10" height="10" />
+                </button>
+                <div class=" side-bar-item flex-column last-item">
+                    <img src="./assets/images/power.png" width="20" height="20" />
+                </div>
+            </div>
+
+        </container>
+    </main>
+    <div class="side-bar-mobile flex-space-col" id="side-bar">
+
+        <div class=" side-bar-item-m-h flex-row border-buttom">
+            <span class="side-bar-title-m">پنل دانش آموزی</span>
+        </div>
+        <div class="side-bar-scroolable-m">
+            <div class=" side-bar-item-m flex-row">
+                <div class="detail-m" id="detail-m">
+                    <span class="side-bar-name">رزیتا گل تراش</span>
+                    <span class="side-bar-status"> دانش آموز</span>
+                </div>
+                <img src="./assets/images/profile.png" width="20" height="20" />
+                <div class="side-bar-tooltip">پروفایل</div>
+            </div>
+            <div class=" side-bar-item-m flex-row">
+                <div class="detail-m" id="detail-m">
+                    <span class="side-bar-detail">درس</span>
+                </div>
+                <img src="./assets/images/dars.png" width="20" height="20" />
+            </div>
+            <div class=" side-bar-item-m flex-row">
+                <div class="detail-m" id="detail-m">
+                    <span class="side-bar-detail"> بسته دروس</span>
+                </div>
+                <img src="./assets/images/package.png" width="20" height="20" />
+            </div>
+            <div class=" side-bar-item-m flex-row">
+                <div class="detail-m" id="detail-m">
+                    <span class="side-bar-detail">آزمون</span>
+                </div>
+                <img src="./assets/images/test.png" width="20" height="20" />
+            </div>
+            <div class=" side-bar-item-m flex-row">
+                <div class="detail-m" id="detail-m">
+                    <span class="side-bar-detail">دبیران</span>
+                </div>
+                <img src="./assets/images/teacher.png" width="20" height="20" />
+            </div>
+            <div class=" side-bar-item-m flex-row">
+                <div class="detail-m" id="detail-m">
+                    <span class="side-bar-detail"> برنامه هفتگی </span>
+                </div>
+                <img src="./assets/images/calendar.png" width="20" height="20" />
+            </div>
+            <div class=" side-bar-item-m flex-row">
+                <div class="detail-m" id="detail-m">
+                    <span class="side-bar-detail"> پرداخت ها</span>
+                </div>
+                <img src="./assets/images/pay.png" width="20" height="20" />
+            </div>
+            <div class=" side-bar-item-m flex-row">
+                <div class="detail-m" id="detail-m">
+                    <span class="side-bar-detail">کیف پول</span>
+                </div>
+                <img src="./assets/images/wallet.png" width="20" height="20" />
+            </div>
+            <div class=" side-bar-item-m flex-row">
+                <div class="detail-m" id="detail-m">
+                    <span class="side-bar-detail">مشاور</span>
+                </div>
+                <img src="./assets/images/consultant.png" width="20" height="20" />
+            </div>
+
+        </div>
+        <div class=" side-bar-item-m-h flex-space last-item-m ">
+            <img src="./assets/images/hamburger.png" width="20" height="20" class="exit-side-bar-m" />
+            <img src="./assets/images/power.png" width="20" height="20" />
+        </div>
+    </div>
+    <img src="./assets/images/3dots.svg" class="left-menue-mobile" width="30" height="30" />
+
+</body>
+
+</html>
