@@ -557,6 +557,7 @@ body {
     top: -15px;
     right: 5px;
     padding: 5px 7px !important;
+    z-index: 99;
 }
 
 .sp2 {
