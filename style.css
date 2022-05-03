@@ -97,6 +97,9 @@ body {
     justify-content: center;
     position: relative;
 }
+.side-bar-item img{
+    padding: 5px;
+}
 
 .side-bar-item-m {
     position: relative;
