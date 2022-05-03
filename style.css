@@ -97,7 +97,8 @@ body {
     justify-content: center;
     position: relative;
 }
-.side-bar-item img{
+
+.side-bar-item img {
     padding: 5px;
 }
 
@@ -817,6 +818,14 @@ body {
     display: none;
 }
 
+.first-img {
+    padding: 5px 0px !important;
+}
+
+.sort {
+    padding: 0px 3px !important;
+    transform: rotate(90deg);
+}
 
 @media (max-width:750px) {
     .main {

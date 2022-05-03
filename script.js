@@ -10,6 +10,7 @@ $(document).ready(function () {
         }, 500);
         $(".detail").show();
         $(".side-bar-tooltip").hide();
+        $('#side-sort').css('transform', 'rotate(270deg)')
     })
     $("#side-bar").on({
         mouseleave: function () {
@@ -21,6 +22,7 @@ $(document).ready(function () {
                 width: "60px"
             }, 500);
             $(".side-bar-tooltip").show();
+            $('#side-sort').css('transform', 'rotate(90deg)')
         },
     })
     $("#scrool-btn").click(function () {
