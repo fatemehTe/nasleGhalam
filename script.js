@@ -8,6 +8,9 @@ $(document).ready(function () {
         $(".scrool-btn").animate({
             width: "103px"
         }, 500);
+        $(".scrool-btn-top").animate({
+            width: "103px"
+        }, 500);
         $(".detail").show();
         $(".side-bar-tooltip").hide();
         $('#side-sort').css('transform', 'rotate(270deg)')
@@ -21,14 +24,22 @@ $(document).ready(function () {
             $(".scrool-btn").animate({
                 width: "60px"
             }, 500);
+            $(".scrool-btn-top").animate({
+                width: "60px"
+            }, 500);
             $(".side-bar-tooltip").show();
             $('#side-sort').css('transform', 'rotate(90deg)')
         },
     })
     $("#scrool-btn").click(function () {
         $(".side-bar-scroolable").animate({
-            scrollTop: $("#scrool-btn").offset().top
-        });
+            scrollTop: $(".scrool-btn").offset().top,
+        })
+    })
+    $("#scrool-btn-top").click(function () {
+        $(".side-bar-scroolable").animate({
+            scrollTop: $(".scrool-btn-top").offset().top - 67,
+        })
     })
     //______________________________________________________________________question send popUp
     $("#question-button").click(function () {
