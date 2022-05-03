@@ -3,10 +3,10 @@ $(document).ready(function () {
     $(".detail").hide();
     $("#f-img").click(function () {
         $("#side-bar").animate({
-            width: "100px"
+            width: "103px"
         }, 500);
         $(".scrool-btn").animate({
-            width: "100px"
+            width: "103px"
         }, 500);
         $(".detail").show();
         $(".side-bar-tooltip").hide();
