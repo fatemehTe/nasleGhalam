@@ -56,7 +56,8 @@
                 </section>
                 <section class="header-left-mobile">
                     <img src="./assets/images/hamburger-gary.png" width="25" height="25" class="header-left-mobile-img">
-                    <img src="./assets/images/close-blue.png" width="25" height="25" class="header-left-mobile-img-close">
+                    <img src="./assets/images/close-blue.png" width="25" height="25"
+                        class="header-left-mobile-img-close">
                     <div class="header-left-mobile-details flex-column">
                         <div>
                             تماس با ما
@@ -93,13 +94,14 @@
             <main class="main-content">
                 <!-- topbar -->
                 <section class="top-bar flex-space">
-                    <section class="profile-box flex-row">
+                    <section class="profile-box flex-row" style="border-radius: 30px;" id="profile-box"
+                        onclick="toggleCssFunction()">
                         <img src="./assets/images/down.png" width="10" height="10" class="sort-img">
                         <span>
                             سلام, رزیتا گل تراش
                         </span>
                         <img src="./assets/images/profile-round.png" width="30" height="30" class="img">
-                        <div class="profile-box-open flex-column">
+                        <div class="profile-box-open flex-column" style="display: none;" id="profile-box-open">
                             <div>پروفایل کاربر</div>
                             <div>خروج</div>
                         </div>
@@ -551,3 +553,13 @@
 </body>
 
 </html>
+<script>
+    function toggleCssFunction() {
+        let elem = document.getElementById("profile-box");
+        let open = document.getElementById("profile-box-open");
+        let border = elem.style.borderRadius;
+        let show = open.style.display;
+        if (border === "30px") { elem.style.borderRadius = "10px 10px 0px 0px"; open.style.display = "block" }
+        else if (border === "10px 10px 0px 0px") { elem.style.borderRadius = "30px"; open.style.display = "none" }
+    }
+</script>

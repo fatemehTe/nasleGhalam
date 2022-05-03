@@ -63,9 +63,9 @@ $(document).ready(function () {
 
 
     //________________________________________________________________profile box open and close
-    $(".profile-box").click(function () {
-        $(".profile-box-open").css("display", "block"),
-            $(".profile-box").css("border-radius", "10px 10px 0px 0px")
+    $(".profile-box").mouseleave(function () {
+        $(".profile-box-open").css("display", "none"),
+            $(this).css("border-radius", "30px")
     })
     $(".profile-box-open").mouseleave(function () {
         $(this).css("display", "none"),
