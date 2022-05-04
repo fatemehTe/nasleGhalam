@@ -1,16 +1,27 @@
 $(document).ready(function () {
     //_________________________________________________side bar slides
     $(".detail").hide();
+    console.log($(".side-bar-scroolable").prop('scrollHeight'));
+    console.log($(".side-bar-scroolable").height())
+    if ($(".side-bar-scroolable").prop('scrollHeight') > $(".side-bar-scroolable").height()) {
+        $(".scrool-btn").css("display", "block"),
+            $(".scrool-btn-top").css("display", "block")
+        $(".side-bar-scroolable").css("margin-top", "67px")
+    }
     $("#f-img").click(function () {
         $("#side-bar").animate({
             width: "103px"
         }, 500);
-        $(".scrool-btn").animate({
-            width: "103px"
-        }, 500);
-        $(".scrool-btn-top").animate({
-            width: "103px"
-        }, 500);
+        if ($(".scroll-btn").css("display") == "block") {
+            $(".scrool-btn").animate({
+                width: "103px"
+            }, 500);
+        }
+        if ($(".scroll-btn-top").css("display") == "block") {
+            $(".scrool-btn-top").animate({
+                width: "103px"
+            }, 500);
+        }
         $(".detail").show();
         $(".side-bar-tooltip").hide();
         $('#side-sort').css('transform', 'rotate(270deg)')
@@ -21,12 +32,16 @@ $(document).ready(function () {
                 width: "60px"
             }, 500);
             $(".detail").hide();
-            $(".scrool-btn").animate({
-                width: "60px"
-            }, 500);
-            $(".scrool-btn-top").animate({
-                width: "60px"
-            }, 500);
+            if ($(".scroll-btn").css("display") == "block") {
+                $(".scrool-btn").animate({
+                    width: "60px"
+                }, 500);
+            }
+            if ($(".scroll-btn-top").css("display") == "block") {
+                $(".scrool-btn-top").animate({
+                    width: "60px"
+                }, 500);
+            }
             $(".side-bar-tooltip").show();
             $('#side-sort').css('transform', 'rotate(90deg)')
         },

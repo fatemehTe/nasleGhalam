@@ -69,13 +69,15 @@ body {
     width: 60px;
     height: 17px;
     border: 1px solid #969696;
-    cursor: pointer
+    cursor: pointer;
+    display: none;
 }
 .scrool-btn-top {
     width: 60px;
     height: 17px;
     border: 1px solid #969696;
-    cursor: pointer
+    cursor: pointer;
+    display: none;
 }
 .side-bar-name {
     font-size: 10px;
@@ -839,7 +841,7 @@ body {
     }
 
     .root {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 0;
     }
 
     .main-left {
