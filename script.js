@@ -12,12 +12,12 @@ $(document).ready(function () {
         $("#side-bar").animate({
             width: "103px"
         }, 500);
-        if ($(".scroll-btn").css("display") == "block") {
+        if ($(".scrool-btn").css("display") === "block") {
             $(".scrool-btn").animate({
                 width: "103px"
             }, 500);
         }
-        if ($(".scroll-btn-top").css("display") == "block") {
+        if ($(".scrool-btn-top").css("display") === "block") {
             $(".scrool-btn-top").animate({
                 width: "103px"
             }, 500);
@@ -32,12 +32,12 @@ $(document).ready(function () {
                 width: "60px"
             }, 500);
             $(".detail").hide();
-            if ($(".scroll-btn").css("display") == "block") {
+            if ($(".scrool-btn").css("display") === "block") {
                 $(".scrool-btn").animate({
                     width: "60px"
                 }, 500);
             }
-            if ($(".scroll-btn-top").css("display") == "block") {
+            if ($(".scrool-btn-top").css("display") === "block") {
                 $(".scrool-btn-top").animate({
                     width: "60px"
                 }, 500);
