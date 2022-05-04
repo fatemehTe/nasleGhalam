@@ -138,7 +138,7 @@ body {
 }
 
 .side-bar-tooltip {
-    position: fixed;
+    position: absolute;
     right: 60px;
     opacity: 0;
     width: 30px;
