@@ -176,8 +176,8 @@ $(document).ready(function () {
     });
     $(".left-menue-mobile").mousedown(function () {
         $(".side-bar-mobile").css("display", "block"),
-            $(this).hide()
-    })
+        $(this).hide()
+    });
     $(".exit-side-bar-m").click(function () {
         $(".side-bar-mobile").css("display", "none"),
             $(".left-menue-mobile").css("display", "block")

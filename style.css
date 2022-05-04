@@ -49,12 +49,12 @@ body {
 }
 
 .side-bar-mobile {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    height: auto;
     background-color: #f2f2f2;
     display: none;
     top: 0px;
+    z-index: 101;
 }
 
 .side-bar-scroolable {
@@ -62,7 +62,7 @@ body {
 }
 
 .side-bar-scroolable-m {
-    overflow: scroll;
+    overflow-y: hidden;
 }
 
 .scrool-btn {
@@ -124,11 +124,13 @@ body {
 }
 
 .side-bar-item-m-h {
-    position: relative;
+    position: fixed;
     height: 50px;
     justify-content: center;
-    position: relative;
     padding: 5px 20px;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 0px !important;
 }
 
 .side-bar-item-m:hover {
@@ -136,7 +138,7 @@ body {
 }
 
 .side-bar-tooltip {
-    position: absolute;
+    position: fixed;
     right: 60px;
     opacity: 0;
     width: 30px;
@@ -149,6 +151,7 @@ body {
     vertical-align: middle;
     font-size: 12px;
     pointer-events: none;
+    z-index: 1000;
 }
 
 .side-bar-item:hover {

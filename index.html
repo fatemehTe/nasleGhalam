@@ -422,7 +422,7 @@
                     </div>
                 </div>
                 <button class="scrool-btn-top" id="scrool-btn-top">
-                    <img src="./assets/images/down-blue.png" width="10" height="10" id="top-btn"/>
+                    <img src="./assets/images/down-blue.png" width="10" height="10" id="top-btn" />
                 </button>
             </div>
             <div class="side-bar-scroolable" style="margin-top: 50px;">
@@ -501,10 +501,10 @@
         </container>
     </main>
     <div class="side-bar-mobile flex-space-col" id="side-bar">
-        <div class=" side-bar-item-m-h flex-row border-buttom">
+        <div class=" side-bar-item-m-h flex-row border-buttom" style="z-index: 1;">
             <span class="side-bar-title-m">پنل دانش آموزی</span>
         </div>
-        <div class="side-bar-scroolable-m">
+        <div class="side-bar-scroolable-m" style="margin-top: 50px;">
             <div class=" side-bar-item-m flex-row">
                 <div class="detail-m" id="detail-m">
                     <span class="side-bar-name">رزیتا گل تراش</span>
@@ -573,10 +573,28 @@
                 </div>
                 <img src="./assets/images/consultant.png" width="20" height="20" />
             </div>
+            <div class=" side-bar-item-m flex-row">
+                <div class="detail-m" id="detail-m">
+                    <span class="side-bar-detail">مشاور</span>
+                </div>
+                <img src="./assets/images/consultant.png" width="20" height="20" />
+            </div>
+            <div class=" side-bar-item-m flex-row">
+                <div class="detail-m" id="detail-m">
+                    <span class="side-bar-detail">مشاور</span>
+                </div>
+                <img src="./assets/images/consultant.png" width="20" height="20" />
+            </div>
+            <div class=" side-bar-item-m flex-row">
+                <div class="detail-m" id="detail-m">
+                    <span class="side-bar-detail">مشاور</span>
+                </div>
+                <img src="./assets/images/consultant.png" width="20" height="20" />
+            </div>
         </div>
-        <div class=" side-bar-item-m-h flex-space last-item-m ">
-            <img src="./assets/images/hamburger.png" width="20" height="20" class="exit-side-bar-m" />
-            <img src="./assets/images/power.png" width="20" height="20" />
+        <div class=" side-bar-item-m-h flex-space last-item-m " style="bottom: 0px;">
+            <img src="./assets/images/hamburger.png" width="20" height="20" class="exit-side-bar-m" style="padding: 0px 20px;" />
+            <img src="./assets/images/power.png" width="20" height="20" class="img"style="padding: 0px 20px;" />
         </div>
     </div>
     <img src="./assets/images/3dots.svg" class="left-menue-mobile" width="30" height="30" />
@@ -584,7 +602,14 @@
 </body>
 
 </html>
+<style>
+
+</style>
 <script>
+    let height = window.outerHeight();
+    let hh = window.height();
+    let h = document.documentElement.clientHeight;
+    console.log(h)
     function toggleCssFunction() {
         let elem = document.getElementById("profile-box");
         let open = document.getElementById("profile-box-open");
