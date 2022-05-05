@@ -81,7 +81,7 @@ body {
     display: none;
 }
 
-#top-btn{
+#top-btn {
     transform: rotate(180deg);
 }
 
@@ -370,6 +370,14 @@ body {
 
 .lesson-m:hover .title-tooltip-tooltip-m {
     display: flex;
+}
+
+.lesson-m:hover img {
+    transform: rotate(180deg);
+}
+
+#search::placeholder {
+    text-align: right;
 }
 
 .lesson:hover {

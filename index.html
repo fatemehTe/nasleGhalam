@@ -130,11 +130,12 @@
                             <button id="search-button">
                                 <img src="./assets/images/search.png" width="15" height="15" class="img">
                             </button>
-                            <input type="text" placeholder='... جستجوی درس' />
+                            <input type="text" placeholder='... جستجوی درس' id="search" />
                         </div>
                         <div class="lesson-m">
                             <div class="lesson-mobile flex-space">
-                                <img src="./assets/images/down-black.svg" width="5px" height="5px" />
+                                <img src="./assets/images/down-black.svg" width="5px" height="5px"
+                                    class="sort-mobile" />
                                 <span>
                                     هنر
                                 </span>
@@ -147,7 +148,8 @@
                         </div>
                         <div class="lesson-m">
                             <div class="lesson-mobile flex-space">
-                                <img src="./assets/images/down-black.svg" width="5px" height="5px" />
+                                <img src="./assets/images/down-black.svg" width="5px" height="5px"
+                                    class="sort-mobile" />
                                 <span>
                                     فارسی
                                 </span>
@@ -160,7 +162,8 @@
                         </div>
                         <div class="lesson-m">
                             <div class="lesson-mobile flex-space">
-                                <img src="./assets/images/down-black.svg" width="5px" height="5px" />
+                                <img src="./assets/images/down-black.svg" width="5px" height="5px"
+                                    class="sort-mobile" />
                                 <span>
                                     فیزیک
                                 </span>
@@ -608,10 +611,6 @@
 
 </style>
 <script>
-    let height = window.outerHeight();
-    let hh = window.height();
-    let h = document.documentElement.clientHeight;
-    console.log(h)
     function toggleCssFunction() {
         let elem = document.getElementById("profile-box");
         let open = document.getElementById("profile-box-open");
@@ -620,4 +619,9 @@
         if (border === "30px") { elem.style.borderRadius = "10px 10px 0px 0px"; open.style.display = "block" }
         else if (border === "10px 10px 0px 0px") { elem.style.borderRadius = "30px"; open.style.display = "none" }
     }
+    // function setSearch() {
+    //     let text = document.getElementById("inner-lesson").innerText;
+    //     document.getElementById("search").placeholder = text;
+    // }
+
 </script>

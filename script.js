@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    $(".inner-lesson").click(function () {
+        let text = $(this).text()
+        $("#search").attr("placeholder", text)
+    })
     //_________________________________________________side bar slides
     $(".detail").hide();
     console.log($(".side-bar-scroolable").prop('scrollHeight'));
@@ -176,7 +180,7 @@ $(document).ready(function () {
     });
     $(".left-menue-mobile").mousedown(function () {
         $(".side-bar-mobile").css("display", "block"),
-        $(this).hide()
+            $(this).hide()
     });
     $(".exit-side-bar-m").click(function () {
         $(".side-bar-mobile").css("display", "none"),
