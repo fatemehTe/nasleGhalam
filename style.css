@@ -930,5 +930,17 @@ body {
     .left-menue-mobile {
         display: none !important;
     }
+    .profile-box-mobile{
+        display: none !important;
+    }
 
+    .lessons-box-mobile{
+        display: none !important;
+    }
+    .exit-profile{
+        display: none !important;
+    }
+    .exit-lesson{
+        display: none !important;
+    }
 }
