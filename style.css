@@ -376,7 +376,7 @@ body {
     transform: rotate(180deg);
 }
 
-#search::placeholder {
+.search::placeholder {
     text-align: right;
 }
 

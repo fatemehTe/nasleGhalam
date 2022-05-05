@@ -1,12 +1,10 @@
 $(document).ready(function () {
     $(".inner-lesson").click(function () {
-        let text = $(this).text()
-        $("#search").attr("placeholder", text)
+        let text = $(this).text();
+        $(".search").attr("placeholder", text)
     })
     //_________________________________________________side bar slides
     $(".detail").hide();
-    console.log($(".side-bar-scroolable").prop('scrollHeight'));
-    console.log($(".side-bar-scroolable").height())
     if ($(".side-bar-scroolable").prop('scrollHeight') > $(".side-bar-scroolable").height()) {
         $(".scrool-btn").css("display", "block"),
             $(".scrool-btn-top").css("display", "block")
@@ -132,9 +130,12 @@ $(document).ready(function () {
         $(".title-tooltip").toggle("slow", function () {
         });
     })
-    $(".title-tooltip-tooltip").mousedown(function () {
+    $(".inner-lesson").mousedown(function () {
         $(".title-tooltip").css("display", "none")
+        let text = $(this).text();
+        $(".search").attr("placeholder", text)
     })
+    
     $(".title-tooltip-tooltip").css({
         'height': ($(".title-tooltip").innerHeight() + 'px')
     });
