@@ -47,6 +47,9 @@ body {
     bottom: 0px;
     z-index: 101;
 }
+.side-bar-detail{
+    font-size: 12px;
+}
 
 .side-bar-mobile {
     position: absolute;
