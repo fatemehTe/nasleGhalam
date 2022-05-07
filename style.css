@@ -476,6 +476,7 @@ body {
 }
 
 .charge-amount {
+    display: inline-block !important;
     font-size: 10px;
     margin-bottom: 7px;
 }
