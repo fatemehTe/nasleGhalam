@@ -95,14 +95,20 @@ $(document).ready(function () {
     //________________________________________________________________profile box open and close
     $(".profile-box").mouseleave(function () {
         $(".profile-box-open").css("display", "none"),
+            $("#sort-img").css({
+                "transform": "rotate(0deg)",
+                "padding": "14px 6px 6px 4px"
+            })
             $(this).css("border-radius", "30px")
     })
     $(".profile-box-open").mouseleave(function () {
         $(this).css("display", "none"),
+            $("#sort-img").css("padding", "14px 6px 6px 4px"),
             $(".profile-box").css("border-radius", "30px")
     })
     $(".profile-box-open div").mousedown(function () {
         $(".profile-box-open").css("display", "none"),
+            $("#sort-img").css("padding", "14px 6px 6px 4px"),
             $(".profile-box").css("border-radius", "30px")
     })
     $(".profile-box-open").css({
@@ -135,7 +141,7 @@ $(document).ready(function () {
         let text = $(this).text();
         $(".search").attr("placeholder", text)
     })
-    
+
     $(".title-tooltip-tooltip").css({
         'height': ($(".title-tooltip").innerHeight() + 'px')
     });

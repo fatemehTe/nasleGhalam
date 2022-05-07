@@ -97,7 +97,8 @@
                 <section class="top-bar flex-space">
                     <section class="profile-box flex-row" style="border-radius: 30px;" id="profile-box"
                         onclick="toggleCssFunction()">
-                        <img src="./assets/images/down.png" width="10" height="10" class="sort-img">
+                        <img src="./assets/images/down.png" width="10" height="10" class="sort-img" id="sort-img"
+                            style="transform: rotate(0deg); padding: 14px 6px 6px 4px">
                         <span>
                             سلام, رزیتا گل تراش
                         </span>
@@ -114,7 +115,8 @@
                     </section>
                     <img src="./assets/images/close.svg" width="20" height="20" class="exit-profile" />
                     <section class="profile-box-mobile flex-row">
-                        <img src="./assets/images/down.png" width="10" height="10" class="sort-img">
+                        <img src="./assets/images/down.png" width="10" height="10" class="sort-img"
+                            style="transform: rotate(0deg); padding: 14px 6px 6px 4px;">
                         <span>
                             سلام, رزیتا گل تراش
                         </span>
@@ -250,8 +252,8 @@
                             <div class="status-bar-charge">
                                 <div>
                                     <div>
-                                        <span class="charge-amount" >هزار تومان</span>
-                                        <span class="charge-amount" >۰,۰۰۰</span>
+                                        <span class="charge-amount">هزار تومان</span>
+                                        <span class="charge-amount">۰,۰۰۰</span>
                                     </div>
                                     <span class="charge-text"> مبلغ کیف پول شما</span>
                                 </div>
@@ -617,10 +619,12 @@
     function toggleCssFunction() {
         let elem = document.getElementById("profile-box");
         let open = document.getElementById("profile-box-open");
+        let sort = document.getElementById("sort-img");
         let border = elem.style.borderRadius;
         let show = open.style.display;
-        if (border === "30px") { elem.style.borderRadius = "10px 10px 0px 0px"; open.style.display = "block" }
-        else if (border === "10px 10px 0px 0px") { elem.style.borderRadius = "30px"; open.style.display = "none" }
+        if (border === "30px") { elem.style.borderRadius = "10px 10px 0px 0px"; open.style.display = "block"; sort.style.transform = "rotate(180deg)"; sort.style.padding="0px 6px" }
+        else if (border === "10px 10px 0px 0px") { elem.style.borderRadius = "30px"; open.style.display = "none"; sort.style.transform = "rotate(0deg)"; sort.style.padding="14px 6px 6px 4px"}
+        
     }
     // function setSearch() {
     //     let text = document.getElementById("inner-lesson").innerText;
